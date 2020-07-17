@@ -1,38 +1,171 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  color: #333;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+a:hover {
+  text-decoration: none;
+  color: #333;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: #555;
+  font-size: 17px;
+}
+
+/*--------- Users list container ----------*/
+
+.users-list-outer {
+  background-color: #fff;
+  width: 550px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 30px;
+  padding-bottom: 30px;
+  box-shadow: 0px 0px 20px #d9d9d9;
+}
+
+.users-list-inner {
+  padding: 0px 30px;
+  background-color: #fff;
+  max-height: 420px;
+  overflow-y: scroll;
+}
+
+.section-header {
+  padding: 40px 0;
+  background-color: #f4f4f0;
+  font-size: 22px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.user-list {
+  padding: 11px 0px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.profile-picture {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+/*----------- User Profile Container -----------------*/
+
+.user-profile-container {
+  margin: 60px;
+}
+
+.sidebar {
+  min-height: 95vh;
+  height: 100%;
+  background: linear-gradient(to bottom, #3a59c8, #6355c8);
+  border-radius: 30px;
+  padding: 0 50px;
+  position: relative;
+}
+
+.sidebar-container {
+  width: 20%;
+}
+
+.nav-link {
+  border-bottom: 1px solid #7373d4;
+  width: 100%;
+  padding: 15px 0 15px 0;
+  font-size: 20px;
+  border-radius: 0 !important;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: transparent !important;
+}
+
+.sidebar-items {
+  position: absolute;
+  top: 35%;
+  width: 60%;
+  margin: auto;
+}
+
+.sidebar-items a {
+  color: #9d9de1;
+}
+
+.profile-header {
+  padding: 30px 0;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.user-picture {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+}
+
+.profile-left-container {
+  border-right: 2px solid #e6e6e6;
+  padding: 0 50px;
+}
+
+.profile-outer {
+  font-size: 20px;
+  padding-top: 40px;
+}
+
+.info-table {
+  border-top: 1px solid #e6e6e6;
+  margin-top: 20px;
+}
+
+td {
+  vertical-align: baseline;
+  padding: 8px 0;
+}
+
+.profile-title {
+  color: #888;
+}
+
+.profile-right-container {
+  padding: 0 50px;
+}
+
+.address-section {
+  padding: 0 40px;
+}
+
+.coming-soon {
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.coming-soon h3 {
+  font-size: 90px;
+  font-weight: bold;
+  color: #eeeeee;
 }
